@@ -6,10 +6,13 @@ import { UserEditComponent } from './components/users/user-edit/user-edit.compon
 
 
 
+// Definición de las rutas de la aplicación
 const routes: Routes = [
   { path: '', component: UserTableComponent },
-  { path: 'users/create', component: UserCreateComponent },
-  { path: 'users/edit/:id', component: UserEditComponent }
+  { path: 'users/create', component: UserCreateComponent }, 
+  { path: 'users/edit/:id', component: UserEditComponent },
+  { path: '', redirectTo: '/users', pathMatch: 'full' },
+
 ];
 
 @NgModule({
